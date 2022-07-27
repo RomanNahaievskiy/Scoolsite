@@ -97,7 +97,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   -webkit-box-shadow: gray 0px 5px 5px;
           box-shadow: gray 0px 5px 5px;
   z-index: 2;
@@ -211,6 +211,7 @@ body {
   display: inline-block;
   width: 90%;
   height: 10px;
+  border-radius: 2px;
   background-color: yellow;
 }
 
@@ -245,7 +246,7 @@ body {
 .news {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   line-height: 1.5;
 }
 
@@ -253,43 +254,66 @@ body {
   margin-bottom: 12px;
 }
 
+.news::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 10px;
+  background-color: yellow;
+  border-radius: 2px;
+}
+
 .news__title {
   font-family: 'Oswald', sans-serif;
 }
 
 .footer {
-  background-color: #a8a8a8;
+  background-color: gray;
   padding: 10px 0;
 }
 
-.footer__item {
-  margin-bottom: 10px;
-  padding: 0 23%;
-}
-
-.footer .container {
+.footer .container-flex {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.contacts {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1  40%;
-          flex: 1 1  40%;
-  overflow: hidden;
-  padding: 0px 15px;
-  margin: 0px -10px;
+.footer a {
+  color: #000000;
 }
 
-.share {
+.footer a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.footer__item {
+  background-color: #f7f7f7;
+  border-radius: 4px;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40%;
-          flex: 1 1 40%;
+      -ms-flex: 1 1 33%;
+          flex: 1 1 33%;
   overflow: hidden;
-  padding: 0px 15px;
-  margin: 0px -10px;
+  padding: 0 12px 10px;
+  margin: 0 4px;
+  font-family: 'Open Sans',sfns-serif;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.founder {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.thin {
+  font-family: 'Oswlad', sans-serif;
+  font-size: 20px;
+  line-height: 34px;
 }
 
 @media (min-width: 768px) {
@@ -412,6 +436,18 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .footer .container-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .container-flex .footer__item {
+    margin-bottom: 8px;
+  }
+}
+
 @media (max-width: 419px) {
   .main {
     padding: 45px 0 0 0;
@@ -456,5 +492,8 @@ body {
     padding: 0 0 20px 0;
     position: relative;
     z-index: 2;
+  }
+  .footer .container-flex {
+    text-align: center;
   }
 }
