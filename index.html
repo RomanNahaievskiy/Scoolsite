@@ -14,6 +14,16 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/iconfont.css">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- для Facebook и ВКонтакте (протокол Open Graph) -->
+    <meta property="og:title" content="Відвідайте сайт школи с. Матейкова" />
+    <meta property="og:description" content="Це офіційний сайт нашого закладу" />
+    <meta property="og:image" content="Ссылка на изображение" />
+    <meta property="og:url" content="https://mateykivzzso-zdo.netlify.app/" />
+    <meta property="og:site_name" content="Офіційний сайт Матейківського ЗЗСОІ-ІІст.-ЗДО Барської міської ради" />
+    <!-- для Twitter -->
+    <meta name="twitter:site" content="Офіційний сайт Матейківського ЗЗСОІ-ІІст.-ЗДО Барської міської ради" />
+    <meta name="twitter:title" content="Відвідайте сайт школи с. Матейкова" />
+    <meta name="twitter:description" content="Це офіційний сайт нашого закладу" />
 </head>
 
 <body>
@@ -30,7 +40,7 @@
                     <nav class="header__menu">
                         <ul class="header__list">
                             <li>
-                                <a href="#" class="header__link">Новини</a>
+                                <a href="/index.html" class="header__link">Новини</a>
                             </li>
                             <li>
                                 <a href="./timetable.html" class="header__link">Розклад</a>
@@ -159,10 +169,18 @@
                     <div class="footer__item share">
                         <div class="thin">Поділитися :</div>
                         <ul>
-                            <li class="share__item  fa-brands fa-facebook">Facebook</li>
-                            <li class="share__item fa-brands fa-instagram">Instagram</li>
-                            <li class="share__item fa-brands fa-twitter">Twitter</li>
-                            <li class="share__item fa-brands fa-viber">Viber</li>
+                            <a href="" class="share__link">
+                                <li class="share__item  fa-brands fa-facebook">Facebook</li>
+                            </a>
+                            <a href="" class="share__link">
+                                <li class="share__item fa-brands fa-instagram">Instagram</li>
+                            </a>
+                            <a href="" class="share__link">
+                                <li class="share__item fa-brands fa-twitter">Twitter</li>
+                            </a>
+                            <a href="viber://" class="share__link">
+                                <li class="share__item fa-brands fa-viber">Viber</li>
+                            </a>
                         </ul>
                     </div>
 
@@ -174,7 +192,7 @@
         </div>
     </div>
     <!--Підключаємо JQery-->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script> src = "https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
     <!--Підключаємо файл JS скриптів-->
     <script src="./js/script.js"></script>
 </body>
