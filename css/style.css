@@ -316,6 +316,10 @@ body {
   line-height: 34px;
 }
 
+.black {
+  color: #000;
+}
+
 @media (min-width: 768px) {
   .main {
     padding: 80px 0 0 0;
@@ -340,10 +344,10 @@ body {
        object-fit: cover;
   }
   .about__name {
-    margin-top: -400px;
+    margin-top: -500px;
     height: 500px;
     text-shadow: 0 0 10px #000;
-    padding: 0 0 20px 0;
+    padding: 100px 0 20px 0;
     position: relative;
     z-index: 2;
   }
