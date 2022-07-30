@@ -1,0 +1,14 @@
+.docs__list{
+    li{
+        display: block;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    a{
+        color: gray;
+    }
+    a:hover{
+        color: black;
+        text-decoration: underline;
+    }
+}

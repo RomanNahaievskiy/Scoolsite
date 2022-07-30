@@ -133,6 +133,50 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.docs__list li {
+  display: block;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.docs__list a {
+  color: gray;
+}
+
+.docs__list a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.btn {
+  display: block;
+  width: 300px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 23px;
+  background-color: yellow;
+  color: gray;
+  padding-top: 10px;
+  font-size: 20px;
+  border: 3px gray solid;
+  margin-bottom: 20px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.btn:hover {
+  background-color: gray;
+  color: #fff;
+  border-color: yellow;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.about p {
+  display: block;
+  margin-bottom: 20px;
+}
+
 body {
   height: 100%;
   font-family: 'Oswald', sans-serif;

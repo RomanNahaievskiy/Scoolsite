@@ -1,0 +1,25 @@
+.btn{
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 23px;
+    background-color: yellow;
+    color: gray;
+    padding-top: 10px;
+    font-size: 20px;
+    border: 3px gray solid;
+    margin-bottom: 20px;
+    transition: 300ms;
+
+}
+.btn:hover{
+    background-color: gray;
+    color: #fff;
+    border-color: yellow;
+    transition: 300ms;
+}
+.about p{
+    display: block;
+    margin-bottom: 20px;
+}
