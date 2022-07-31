@@ -1,4 +1,4 @@
-@import "_nullstyle", "_adminstyle", "_officialdocstyle" , "_distancestudystyle.scss";
+@import "_nullstyle", "_adminstyle", "_officialdocstyle" , "_distancestudystyle", "_contactstyle";
 
 body{
     height: 100%;
@@ -267,7 +267,7 @@ body{
 		&__item {
 		}
 }
-
+// below is the style for Responsive View
 
 @media (min-width: 768px){
     .main{

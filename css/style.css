@@ -139,15 +139,6 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 45px;
 }
 
-.docs__list a {
-  color: gray;
-}
-
-.docs__list a:hover {
-  color: black;
-  text-decoration: underline;
-}
-
 .btn {
   display: block;
   width: 300px;
@@ -175,6 +166,15 @@ h1, h2, h3, h4, h5, h6 {
 .about p {
   display: block;
   margin-bottom: 20px;
+}
+
+.news a {
+  color: #000000;
+}
+
+.news a:hover {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 body {
