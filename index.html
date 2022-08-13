@@ -178,7 +178,7 @@
                             <a href="" class="share__link">
                                 <li class="share__item fa-brands fa-twitter">Twitter</li>
                             </a>
-                            <a href="viber://" class="share__link">
+                            <a id="viber_share" class="share__link">
                                 <li class="share__item fa-brands fa-viber">Viber</li>
                             </a>
                         </ul>
@@ -195,6 +195,11 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <!--Підключаємо файл JS скриптів-->
     <script src="./js/script.js"></script>
+    <script>
+        var buttonID = "viber_share";
+        var text = "Матейківський ЗЗСО І-ІІст.-ЗДО Барської міської ради";
+        document.getElementById(buttonID).setAttribute('href', "viber://forward?text=" + encodeURIComponent(text + " " + window.location.href)); 
+    </script>
 </body>
 
 </html>
