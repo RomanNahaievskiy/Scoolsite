@@ -1,0 +1,168 @@
+
+.timetable-jun {
+    display: grid;
+    color: black;
+
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows:repeat(6,1fr) ;
+    
+
+    &__item {
+        border: 1px solid gray;
+    }
+
+
+    // .timetable-jun__title-row
+
+    &__title-row {
+    }
+
+    // .timetable-jun__monday-row
+
+    &__monday-row {
+
+        // .timetable-jun__monday-row_1
+
+        &_1 {
+            grid-column-start:4 ;
+        }
+
+        // .timetable-jun__monday-row_2
+
+        &_2 {
+        }
+
+        // .timetable-jun__monday-row_3
+
+        &_3 {
+        }
+
+        // .timetable-jun__monday-row_4
+
+        &_4 {
+        }
+    }
+
+    // .timetable-jun__tuesday-row
+
+    &__tuesday-row {
+
+        // .timetable-jun__tuesday-row_1
+
+        &_1 {
+        }
+
+        // .timetable-jun__tuesday-row_2
+
+        &_2 {
+        }
+
+        // .timetable-jun__tuesday-row_3
+
+        &_3 {
+        }
+
+        // .timetable-jun__tuesday-row_4
+
+        &_4 {
+        }
+    }
+
+    // .timetable-jun__wednesday-row
+
+    &__wednesday-row {
+
+        // .timetable-jun__wednesday-row_1
+
+        &_1 {
+        }
+
+        // .timetable-jun__wednesday-row_2
+
+        &_2 {
+        }
+
+        // .timetable-jun__wednesday-row_3
+
+        &_3 {
+        }
+
+        // .timetable-jun__wednesday-row_4
+
+        &_4 {
+        }
+    }
+
+    // .timetable-jun__thursday-row
+
+    &__thursday-row {
+
+        // .timetable-jun__thursday-row_1
+
+        &_1 {
+        }
+
+        // .timetable-jun__thursday-row_2
+
+        &_2 {
+        }
+
+        // .timetable-jun__thursday-row_3
+
+        &_3 {
+        }
+
+        // .timetable-jun__thursday-row_4
+
+        &_4 {
+        }
+    }
+
+    // .timetable-jun__friday-row
+
+    &__friday-row {
+
+        // .timetable-jun__friday-row_1
+
+        &_1 {
+        }
+
+        // .timetable-jun__friday-row_2
+
+        &_2 {
+        }
+
+        // .timetable-jun__friday-row_3
+
+        &_3 {
+        }
+
+        // .timetable-jun__friday-row_4
+
+        &_4 {
+        }
+    }
+
+    // .timetable-jun__name-day
+
+    &__name-day {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-row-end: 6;
+    }
+
+    // .timetable-jun__time
+
+    &__time {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        
+
+    }
+
+    // .timetable-jun__number
+
+    &__number {
+    }
+}
+

@@ -1,4 +1,4 @@
-@import "_nullstyle", "_adminstyle", "_officialdocstyle" , "_distancestudystyle", "_contactstyle";
+@import "_nullstyle", "_adminstyle", "_officialdocstyle" , "_distancestudystyle", "_contactstyle", "_timetable";
 
 body{
     height: 100%;
@@ -246,6 +246,23 @@ body{
 }
 .black{
     color: #000;
+}
+.bold{
+    font-weight: bold;
+}
+.bold-italic {
+    font-weight: bold;
+    font-style: italic;
+}
+.text-list::before {
+    content: '';
+    display: inline-block;
+    background-color: #000;
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    margin-right: 12px;
+    margin-bottom: 4px;
 }
 .address{
 }

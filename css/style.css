@@ -177,6 +177,40 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: underline;
 }
 
+.timetable-jun {
+  display: -ms-grid;
+  display: grid;
+  color: black;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+}
+
+.timetable-jun__item {
+  border: 1px solid gray;
+}
+
+.timetable-jun__monday-row_1 {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+}
+
+.timetable-jun__name-day {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 6;
+}
+
+.timetable-jun__time {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
 body {
   height: 100%;
   font-family: 'Oswald', sans-serif;
@@ -422,6 +456,26 @@ body {
 
 .black {
   color: #000;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bold-italic {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.text-list::before {
+  content: '';
+  display: inline-block;
+  background-color: #000;
+  border-radius: 50%;
+  height: 6px;
+  width: 6px;
+  margin-right: 12px;
+  margin-bottom: 4px;
 }
 
 @media (min-width: 768px) {
